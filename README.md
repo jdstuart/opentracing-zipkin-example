@@ -1,15 +1,11 @@
-# Zipkin example
+# Opentracing Zipkin example
 
-This example starts up a [Zipkin](http://zipkin.io) server and an example web application that send traces to the Zipkin backend. The example application implement the [Opentracing](http://opentracing.io) API.
-
-### Requirements
-
-* A working installation of Docker and Docker Compose
+An example application instrumented with tracing to show how requests flow between components. The [Opentracing](http://opentracing.io) API is implemented to collect trace information and is configured to sent traces to a [Zipkin](http://zipkin.io) server where it can be viewed through the Zipkin UI. 
 
 ### Run the example
-`docker-compose up`
 
-Starts the Zipkin server and API as well as the example application.
+Start the Zipkin server and example application
+`docker-compose up`
 
 Example application can be viewed at: `http://localhost:8080`
 
