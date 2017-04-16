@@ -45,9 +45,11 @@ services:
     depends_on:
       - zipkinstorage
 
-  exampleapp:
+  app:
     build: .
     ports:
       - "8080:8080"
+    volumes:
+      - .:/go/src/app:ro
     depends_on:
       - zipkin
